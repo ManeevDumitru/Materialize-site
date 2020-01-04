@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+*:focus {
+    outline: none;
+}
+
+/* -------------------- Section 1 ------------------------- Section 1 ---------------------- */
+
+.parallax-container {
+    height: 955px !important;
+}
+.bg-logo {
+    position: absolute;
+    background: url(../img/logo/RDR2Logo.png);
+    width: 640px;
+    height: 257px;
+    transform: scale(.8);
+    left: 50%;
+    transform: translate(-50%,25%);
+}
+
+/* -------------------- Section 2 ------------------------- Section 2 ---------------------- */
+
+section:nth-child(2) {
+    background: #000;
+    color: #fff;
+}
+section:nth-child(2)::after {
+    content: " ";
+    background: url(../img/utility/bar1i.png);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    z-index: 2;
+}
+
+section:nth-child(2) .row:first-child {
+    padding-left: 50px;
+}
+
+.sCategory {
+    font-family: Chin; 
+    margin-left: 15px;
+}
+
+h1::after {
+    content: " ";
+    background: url(../img/utility/Underline.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 140px;
+    position: absolute;
+    bottom: -5px;
+    left: 0
+}
+
+.about {
+    height: 525px;
+}
+
+.about p {
+    font-size: 24px;
+
+}
+
+.about-bg video{
+    height: 520px;
+}
+
+.about-bg::before {
+    content: " ";
+    background: url(../img/utility/outlineVidT.png);
+    height: 550px;
+    width: 925px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.about-bg::after {
+    content: " ";
+    background: url(../img/utility/outlineVidB.png);
+    height: 550px;
+    width: 925px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* -------------------- Section 3 ------------------------- Section 3 ---------------------- */
+
+.abot2 {
+    color: #fff;
+    height: 100%;
+}
