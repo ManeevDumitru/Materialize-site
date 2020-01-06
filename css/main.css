@@ -161,7 +161,7 @@ section:nth-child(3)::after {
 }
 
 .boxJobs {
-    background: url(../img/Chars.png);
+    background: url(../img/bg/chars.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -185,6 +185,47 @@ section:nth-child(3)::after {
     margin: 15px 25px;
     cursor: pointer;
 }
+#backgroundBH, #backgroundTR, #backgroundCO {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    margin: auto;
+    z-index: 5;
+    width: 1650px;
+    height: 850px;
+    display: none;
+}
+
+#buttonBH, #buttonCO, #buttonTR {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.bBHTextBox {
+    margin-top: 150px;
+    overflow: scroll;
+    height: 600px;
+    color: #dddddd;
+}
+
+.listSkills {
+    list-style-type: disc !important;
+}
+
+.listSkills li {
+    padding-left: 5px;
+}
+.listSkills li span {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.listSkills li::before {
+    content: "\2022";
+}
 
 /* ---------------------------------- BOX BH ---------------------------------- */
 
@@ -192,28 +233,11 @@ section:nth-child(3)::after {
     background: url(../img/utility/buttonBH.png);
     width: 370px;
     height: 150px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
     transform: translate(-50%, -25%);
 }
 
 #backgroundBH {
-    position: fixed;
-    top: 5%;
-    left: 5%;
-    margin: auto;
-    z-index: 5;
-    width: 1650px;
-    height: 850px;
-    background: url(../img/backgroundBH.png);
-    display: none;
-}
-
-.bBHTextBox {
-    margin-top: 200px;
+    background: url(../img/bg/bBH.png);
 }
 
 /* ---------------------------------- BOX TR ---------------------------------- */
@@ -222,12 +246,10 @@ section:nth-child(3)::after {
     background: url(../img/utility/buttonTR.png);
     width: 372px;
     height: 101px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
     transform: translate(-50%, -50%);
+}
+#backgroundTR {
+    background: url(../img/bg/bTR.png);
 }
 
 /* ---------------------------------- BOX CO ---------------------------------- */
@@ -236,10 +258,9 @@ section:nth-child(3)::after {
     background: url(../img/utility/buttonCO.png);
     width: 497px;
     height: 91px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
     transform: translate(-50%, -50%);
+}
+
+#backgroundCO {
+    background: url(../img/bg/bCO.png);
 }
