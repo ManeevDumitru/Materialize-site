@@ -2,64 +2,86 @@
     margin: 0;
     padding: 0;
     position: relative;
-    
 }
+
 *:focus {
     outline: none;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+span {
+    color: #b00c13;
+    font-weight: 600;
+}
+
+.sCategory, h4, h2 {
+    font-family: Chin;
+    margin-left: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b00c13;
 }
 
 /* -------------------- Section 1 ------------------------- Section 1 ---------------------- */
 
 .parallax-container {
     height: 955px !important;
+    z-index: 1;
 }
+
 .bg-logo {
     position: absolute;
-    background: url(../img/logo/RDR2Logo.png);
+    background: url(../img/logo/logo.png);
     width: 640px;
     height: 257px;
-    transform: scale(.8);
     left: 50%;
-    transform: translate(-50%,25%);
+    transform: translate(-50%, 25%) scale(.8);
 }
 
 /* -------------------- Section 2 ------------------------- Section 2 ---------------------- */
+
+section:nth-child(2)::before {
+    content: " ";
+    background: url(../img/utility/bar1.png);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: -49px;
+    left: 0;
+    z-index: 2;
+}
 
 section:nth-child(2) {
     background: #000;
     color: #fff;
 }
-section:nth-child(2)::after {
-    content: " ";
-    background: url(../img/utility/bar1i.png);
-    background-position: top;
-    background-size: cover;
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    bottom: -150px;
-    left: 0;
-    z-index: 2;
-}
 
-section:nth-child(2) .row:first-child {
+section:nth-child(2) .row:first-child, section:nth-child(3) .row:first-child {
     padding-left: 50px;
 }
 
-.sCategory {
-    font-family: Chin; 
-    margin-left: 15px;
-}
-
-h1::after {
+h1::before {
     content: " ";
-    background: url(../img/utility/Underline.png);
+    background: url(../img/utility/line1.png);
     background-position: top;
     background-repeat: no-repeat;
-    height: 12px;
-    width: 140px;
+    width: 1500px;
+    height: 50px;
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0
 }
 
@@ -69,10 +91,9 @@ h1::after {
 
 .about p {
     font-size: 24px;
-
 }
 
-.about-bg video{
+.about-bg video {
     height: 520px;
 }
 
@@ -86,6 +107,7 @@ h1::after {
     left: 0;
     z-index: 2;
 }
+
 .about-bg::after {
     content: " ";
     background: url(../img/utility/outlineVidB.png);
@@ -99,7 +121,125 @@ h1::after {
 
 /* -------------------- Section 3 ------------------------- Section 3 ---------------------- */
 
-.abot2 {
-    color: #fff;
+section:nth-child(3) {
+    background: #000;
+}
+
+section:nth-child(3) h1::before {
+    background: url(../img/utility/line2.png);
+}
+
+section:nth-child(3)::after {
+    content: " ";
+    background: url(../img/utility/bar1i.png);
+    background-size: auto;
+    width: 100%;
+    height: 150px !important;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    z-index: 2;
+}
+
+.boxStoryline, .boxMap, .boxCatalogue {
+    height: 36vw !important;
+}
+
+.boxStoryline {
+    background: url(../img/bg/Morgan.png);
+    background-size: 100% auto;
+}
+
+.boxMap {
+    background: url(../img/bg/Map.png);
+    background-size: 100% auto;
+}
+
+.boxCatalogue {
+    background: url(../img/bg/Catalogue.png);
+    background-size: 100% auto;
+}
+
+.boxJobs {
+    background: url(../img/Chars.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 650px;
+}
+
+.boxBH, .boxTR, .boxCO {
     height: 100%;
+}
+
+.buttonClose {
+    background: url(../img/utility/buttonClose.png);
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 15px 25px;
+    cursor: pointer;
+}
+
+/* ---------------------------------- BOX BH ---------------------------------- */
+
+#buttonBH {
+    background: url(../img/utility/buttonBH.png);
+    width: 370px;
+    height: 150px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -25%);
+}
+
+#backgroundBH {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    margin: auto;
+    z-index: 5;
+    width: 1650px;
+    height: 850px;
+    background: url(../img/backgroundBH.png);
+    display: none;
+}
+
+.bBHTextBox {
+    margin-top: 200px;
+}
+
+/* ---------------------------------- BOX TR ---------------------------------- */
+
+#buttonTR {
+    background: url(../img/utility/buttonTR.png);
+    width: 372px;
+    height: 101px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------- BOX CO ---------------------------------- */
+
+#buttonCO {
+    background: url(../img/utility/buttonCO.png);
+    width: 497px;
+    height: 91px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
 }

@@ -1,0 +1,11 @@
+/*@media only screen and (max-width: 2000px) {
+    .boxStoryline, .boxMap, .boxCatalogue {
+        width: 500px !important;
+        height: 600px;
+        background-size: cover;
+    }
+    .row {
+        margin: auto;
+        max-width: 1920px;
+    }
+}*/

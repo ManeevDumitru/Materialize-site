@@ -20,7 +20,7 @@
     </style>
 </head>
 
-<body onload="par()">
+<body>
     <section>
         <div class="parallax-container">
             <div class="bg-logo">
@@ -38,11 +38,11 @@
         </div>
         <div class="row">
             <div class="col s7">
-                <div class="about-bg">
-                    <a href="">
-                    <video src="video/RDR2vid4.mp4#t=7" muted autoplay id="vid1" loop></video>
+                <a href="https://youtu.be/Dw_oH5oiUSE">
+                    <div class="about-bg">
+                        <video src="video/RDR2vid4.mp4#t=7" muted id="vid1" loop></video>
+                    </div>
                 </a>
-                </div>
             </div>
             <div class="col s4 valign-wrapper center about">
                 <p>
@@ -52,22 +52,55 @@
                     and more.
                 </p>
             </div>
-            
         </div>
     </section>
     <section>
-        <div class="parallax-container">
-            <div class="row">
-                <div class="col s4 push-s6">
-                    <div class="abot2">
-                        12312 <br>
-                        12312 <br>
-                        12312 <br>
-                        12312 <br>
-                        12312 <br>
-                    </div>
+        <div class="row">
+            <div class="col s2 sCategory">
+                <h1>Features </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <div class="boxStoryline center-align">
+                    <h4>Deep <span>storyline</span></h4>
                 </div>
             </div>
+            <div class="col s4 center">
+                <div class="boxMap center-align">
+                    <h4>Huge <span>open world</span> map</h4>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <div class="boxCatalogue">
+                    <h4>Enormous <span>weapon</span> variety</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2><span>Online</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="boxJobs">
+                <div class="col s4 center boxBH">
+                    <button id="buttonBH"></button>
+                </div>
+                <div class="col s4 center boxTR">
+                    <button id="buttonTR"></button>
+                </div>
+                <div class="col s4 center boxCO">
+                    <button id="buttonCO"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="parallax-container">
             <div class="parallax">
                 <img src="img/bg/RDR2bg2.png" alt="">
             </div>
@@ -79,14 +112,34 @@
 
 
 
+    <div id="backgroundBH">
+        <div class="row">
+            <div class="col s4 push-s7 center-align bBHTextBox">
+                <div class="bBHText">
+                    <h5>If you want to become a fancy gunslinger, then the Red Dead Online Bounty Hunter role should
+                        appeal.
+                        You'll unlock various gun spinning tricks as you rank up by bringing in wanted criminals, as
+                        well as
+                        additional weapons such as bolas and a reinforced lasso to help you restrain tough targets.
+                        Bounties can
+                        be acquired from boards near post offices, railway stations, and law offices, with greater
+                        rewards
+                        available for felons you bring back alive, and you can also tackle the weekly Red Dead Online
+                        Legendary
+                        Bounties. Once you hit role rank 12, you'll also get the opportunity to apprehend other online
+                        players
+                        with a bounty of $20 or more, by following an invite if a pursuit is happening nearby.</h5>
+                </div>
+            </div>
+        </div>
+        <button class="buttonClose"></button>
+    </div>
 
 
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 </body>
