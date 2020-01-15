@@ -18,6 +18,11 @@ span {
     font-weight: 600;
 }
 
+h1 {
+    background: #000 !important;
+    z-index: 3;
+}
+
 .sCategory, h4, h2 {
     font-family: Chin;
     margin-left: 15px;
@@ -127,9 +132,10 @@ section:nth-child(3) {
 
 section:nth-child(3) h1::before {
     background: url(../img/utility/line2.png);
+    z-index: 2;
 }
 
-section:nth-child(3)::after {
+/*section:nth-child(3)::after {
     content: " ";
     background: url(../img/utility/bar1i.png);
     background-size: auto;
@@ -139,7 +145,7 @@ section:nth-child(3)::after {
     bottom: -150px;
     left: 0;
     z-index: 2;
-}
+}*/
 
 .boxStoryline, .boxMap, .boxCatalogue {
     height: 36vw !important;
@@ -166,11 +172,7 @@ section:nth-child(3)::after {
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
-    height: 650px;
-}
-
-.boxBH, .boxTR, .boxCO {
-    height: 100%;
+    height: 600px;
 }
 
 .buttonClose {
@@ -185,6 +187,7 @@ section:nth-child(3)::after {
     margin: 15px 25px;
     cursor: pointer;
 }
+
 #backgroundBH, #backgroundTR, #backgroundCO {
     position: fixed;
     top: 5%;
@@ -196,12 +199,16 @@ section:nth-child(3)::after {
     display: none;
 }
 
+.boxBH, .boxTR, .boxCO {
+    height: 36vw;
+}
+
 #buttonBH, #buttonCO, #buttonTR {
     border: none;
     cursor: pointer;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 5%;
 }
 
 .bBHTextBox {
@@ -218,6 +225,7 @@ section:nth-child(3)::after {
 .listSkills li {
     padding-left: 5px;
 }
+
 .listSkills li span {
     font-weight: 800;
     font-size: 18px;
@@ -248,6 +256,7 @@ section:nth-child(3)::after {
     height: 101px;
     transform: translate(-50%, -50%);
 }
+
 #backgroundTR {
     background: url(../img/bg/bTR.png);
 }
@@ -263,4 +272,16 @@ section:nth-child(3)::after {
 
 #backgroundCO {
     background: url(../img/bg/bCO.png);
+}
+
+/* ---------------------------------- Section 4 ------------------------------------- */
+
+section:nth-child(4) h1::before, section:nth-child(5) h1::before  {
+    background: none !important;
+}
+
+.boxSingleplayer {
+    background: #fff;
+    height: 955px;
+    width: 100%;
 }
