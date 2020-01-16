@@ -1,11 +1,149 @@
-/*@media only screen and (max-width: 2000px) {
+@media screen and (max-width: 1600px) {
+    h1::before {
+        display: none
+    }
+    video {
+        display: none !important;
+    }
+    .about-bg::after {
+        display: none !important;
+    }
+    .about-bg::before {
+        display: none !important;
+    }
+    section:nth-child(2) .row:nth-child(2) {
+        display: none;
+    }
+    #section2Mob {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .boxJobs button {
+        transform: translate(-50%, -20%) scale(.8) !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .boxJobs button {
+        transform: translate(-50%, -25%) scale(.6) !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #sectionSingleplayerPC {
+        display: none;
+    }
+    #sectionSingleplayerMob {
+        display: block;
+    }
+    #section5row2pc {
+        display: none !important;
+    }
+    #section5row2mob {
+        display: block;
+    }
+    #section5row2mob .boxJobs {
+        background: none;
+    }
+    .boxJobs .boxBH {
+        background: url(../img/bg/BHc.png);
+        background-size: 100% auto;
+    }
+    .boxJobs .boxTR {
+        background: url(../img/bg/TRc.png);
+        background-size: 100% auto;
+    }
+    .boxJobs .boxCO {
+        background: url(../img/bg/COc.png);
+        background-size: 100% auto;
+    }
+    .boxJobs button {
+        transform: translate(0, -20%) scale(.75) !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .boxJobs .row:nth-child(3) button {
+        transform: translate(-30%, -20%) scale(.75) !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #section3PC {
+        display: none;
+    }
+    #section3Mob {
+        display: block;
+    }
     .boxStoryline, .boxMap, .boxCatalogue {
-        width: 500px !important;
-        height: 600px;
-        background-size: cover;
+        height: 39vw !important;
     }
-    .row {
-        margin: auto;
-        max-width: 1920px;
+    #section3Mob .boxStoryline {
+        background: url(../img/bg/sunsetc.png);
+        background-size: 100% auto;
     }
-}*/
+    #section3Mob .boxMap {
+        background: url(../img/bg/landscapec.png);
+        background-size: 100% auto;
+    }
+    #section3Mob .boxCatalogue {
+        background: url(../img/bg/cataloguec.png);
+        background-size: 100% auto;
+    }
+    .boxJobs button {
+        transform: translate(-15%, -20%) scale(.58);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .boxJobs button {
+        transform: translate(-15%, -20%) scale(.58) !important;
+    }
+    .boxJobs .row:nth-child(3) button {
+        transform: translate(-30%, -20%) scale(.58) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bg-logo {
+        transform: translate(-50%, 25%) scale(.6);
+    }
+    .boxJobs button {
+        transform: translate(-15%, -20%) scale(.25);
+    }
+    #sectionSingleplayerMob h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .boxJobs button {
+        transform: translate(-25%, -10%) scale(.35) !important;
+    }
+    .boxJobs .row:nth-child(3) button {
+        transform: translate(-30%, -20%) scale(.35) !important;
+    }
+    section:nth-child(6) span {
+        font-size: 60px;
+    }
+    .boxStoryline h4, .boxMap h4, .boxCatalogue h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .boxJobs button {
+        transform: translate(-32%, 20%) scale(.35) !important;
+    }
+    .boxJobs .row:nth-child(3) button {
+        transform: translate(-43%, 10%) scale(.35) !important;
+    }
+    section:nth-child(6) span {
+        font-size: 50px;
+    }
+    #sectionSingleplayerMob h4 {
+        font-size: 20px;
+    }
+}

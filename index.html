@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/nav.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
@@ -42,7 +41,7 @@
                 <h1>About </h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="section2PC">
             <div class="col s7">
                 <a href="https://youtu.be/Dw_oH5oiUSE">
                     <div class="about-bg">
@@ -59,6 +58,17 @@
                 </p>
             </div>
         </div>
+        <div class="row" id="section2Mob">
+            <div class="col s12">
+                <p>
+                    <span>Red Dead Redemption 2</span>, the critically acclaimed open world epic from Rockstar Games and
+                    the highest
+                    rated game of the console generation, now enhanced for PC with new Story Mode content, visual
+                    upgrades
+                    and more.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Section 3 -->
@@ -66,10 +76,10 @@
     <section>
         <div class="row">
             <div class="col s2 sCategory">
-                <h1>Features </h1>
+                <h1 id="work">Features </h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="section3PC">
             <div class="col s4">
                 <div class="boxStoryline center-align">
                     <h4>Deep <span>storyline</span></h4>
@@ -81,8 +91,31 @@
                 </div>
             </div>
             <div class="col s4 center">
-                <div class="boxCatalogue">
+                <div class="boxCatalogue center-align">
                     <h4>Enormous <span>weapon</span> variety</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="section3Mob">
+            <div class="row">
+                <div class="col s12">
+                    <div class="boxStoryline center-align">
+                        <h4>Deep <span>storyline</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="boxMap center-align">
+                        <h4>Huge <span>open world</span> map</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="boxCatalogue center-align">
+                        <h4>Enormous <span>weapon</span> variety</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +129,7 @@
                 <h1><span>Single</span>player</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="sectionSingleplayerPC">
             <div class="row">
                 <div class="col s4">
                     <img src="img/bg/bank.png" alt="bank">
@@ -126,6 +159,38 @@
                 </div>
             </div>
         </div>
+        <div class="row" id="sectionSingleplayerMob">
+            <div class="row">
+                <div class="col s6 center-align">
+                    <img src="img/bg/bank.png" alt="bank">
+                    <h4>ROb a <span>bank</span></h4>
+                </div>
+                <div class="col s6 center-align">
+                    <img src="img/bg/horseback.png" alt="horseback">
+                    <h4>explore the <span>Wilderness</span></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 center-align">
+                    <img src="img/bg/outfit.png" alt="outfit">
+                    <h4>old west <span>outfits</span></h4>
+                </div>
+                <div class="col s6 center-align">
+                    <img src="img/bg/gang.png" alt="gang">
+                    <h4>be a part of dutch van derline <span>gang</span></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 center-align">
+                    <img src="img/bg/hunt.png" alt="hunt">
+                    <h4>be an animal <span>hunter</span></h4>
+                </div>
+                <div class="col s6 center-align">
+                    <img src="img/bg/gun.png" alt="gun">
+                    <h4>experience the authetic <span>weapons</span></h4>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section 5 -->
@@ -136,17 +201,37 @@
                 <h1><span>Multi</span>player</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="section5row2pc">
             <div class="boxJobs">
                 <div class="col s4 center boxBH">
-                    <button id="buttonBH"></button>
+                    <button class="buttonBH"></button>
                 </div>
                 <div class="col s4 center boxTR">
-                    <button id="buttonTR"></button>
+                    <button class="buttonTR"></button>
                 </div>
                 <div class="col s4 center boxCO">
-                    <button id="buttonCO"></button>
+                    <button class="buttonCO"></button>
                 </div>
+            </div>
+        </div>
+        <div class="row" id="section5row2mob">
+            <div class="boxJobs">
+                <div class="row">
+                    <div class="col s12 center boxBH">
+                        <button class="buttonBH"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center boxTR">
+                        <button class="buttonTR"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center boxCO">
+                        <button class="buttonCO"></button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

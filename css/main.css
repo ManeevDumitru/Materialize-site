@@ -11,6 +11,7 @@
 *::after {
     overflow: hidden;
 }
+
 body {
     background: #000;
     color: #fff;
@@ -25,7 +26,6 @@ h1 {
     background: #000 !important;
     z-index: 3;
 }
-
 
 .sCategory, h4, h2 {
     font-family: Chin;
@@ -124,6 +124,24 @@ h1::before {
     z-index: 2;
 }
 
+#section2Mob {
+    display: none;
+}
+
+#section3Mob .row {
+    padding: 0;
+}
+
+#section2Mob P {
+    max-width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
+#section2Mob span {
+    font-family: chin;
+}
+
 section:nth-child(3) {
     background: #000;
 }
@@ -133,8 +151,20 @@ section:nth-child(3) h1::before {
     z-index: 2;
 }
 
+#section3Mob {
+    display: none;
+}
+
 .boxStoryline, .boxMap, .boxCatalogue {
-    height: 36vw !important;
+    height: 36vw;
+}
+
+.boxStoryline h4, .boxMap h4, .boxCatalogue h4 {
+    position: absolute;
+    left: 50%;
+    top: -42px;
+    transform: translate(-50%);
+    width: 100%;
 }
 
 .boxStoryline {
@@ -158,7 +188,7 @@ section:nth-child(3) h1::before {
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
-    height: 600px;
+    height: 33vw;
 }
 
 .buttonClose {
@@ -185,11 +215,15 @@ section:nth-child(3) h1::before {
     display: none;
 }
 
+#section5row2mob {
+    display: none;
+}
+
 .boxBH, .boxTR, .boxCO {
     height: 36vw;
 }
 
-#buttonBH, #buttonCO, #buttonTR {
+.buttonBH, .buttonCO, .buttonTR {
     border: none;
     cursor: pointer;
     position: absolute;
@@ -223,7 +257,7 @@ section:nth-child(3) h1::before {
 
 /* ---------------------------------- BOX BH ---------------------------------- */
 
-#buttonBH {
+.buttonBH {
     background: url(../img/utility/buttonBH.png);
     width: 370px;
     height: 150px;
@@ -236,7 +270,7 @@ section:nth-child(3) h1::before {
 
 /* ---------------------------------- BOX TR ---------------------------------- */
 
-#buttonTR {
+.buttonTR {
     background: url(../img/utility/buttonTR.png);
     width: 372px;
     height: 101px;
@@ -249,7 +283,7 @@ section:nth-child(3) h1::before {
 
 /* ---------------------------------- BOX CO ---------------------------------- */
 
-#buttonCO {
+.buttonCO {
     background: url(../img/utility/buttonCO.png);
     width: 497px;
     height: 91px;
@@ -275,11 +309,21 @@ section .row:nth-child(2) .row {
     margin: auto;
     text-align: center;
 }
-section .row:nth-child(2) .row img{
-    height: 16vw;
+
+section .row:nth-child(2) .row img {
+    height: 14vw;
 }
+
 section .row:nth-child(2) .row h4 {
     margin: 0;
+}
+
+#sectionSingleplayerMob {
+    display: none;
+}
+
+section:nth-child(4) #sectionSingleplayerMob img {
+    height: 23vw;
 }
 
 section:nth-child(5)::after {
@@ -293,7 +337,7 @@ section:nth-child(5)::after {
     z-index: 2;
 }
 
-section:nth-child(6) span{
+section:nth-child(6) span {
     font-size: 72px;
     font-family: Chin;
     position: absolute;
